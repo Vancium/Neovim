@@ -20,6 +20,14 @@ nmap(">", ">Gv>", { desc = "[I]ndent Line"})
 nmap("<", "<Gv<", { desc = "[O]utdent Line"})
 
 
+-- Normal Mode (Window Manipulation)
+
+nmap("<C-h>", "<C-w>h", { desc = "Focus left", noremap = false})
+nmap("<C-l>", "<C-w>l", { desc = "Focus right", noremap = false})
+nmap("<C-j>", "<C-w>j", { desc = "Focus below", noremap = false})
+nmap("<C-k>", "<C-w>k", { desc = "Focus above", noremap = false})
+
+
 -- Visual Mode (General)
 
 vmap(">", ">gv", { desc = "[I]ndent Lines" })

@@ -35,7 +35,7 @@ return {
         nmap("<leader>ft", function() vim.cmd([[ Telescope ]])end, { desc = "[F]ind [G]it" })
         nmap("<leader>fs", function() builtin.grep_string({ search = vim.fn.input("Grep: ")}) end, { desc = "[F]ind [S]tring" })
         nmap("<leaderfi", "<CMD> Telescope import<CR>", { desc = "[F]ind [I]mports"})
+        nmap("<leader>en", function() require("plugins.telescope.custom.pickers").edit_neovim() end, { desc = "[E]dit [N]eovim" })
 
-        
 	end,
 }
